@@ -11,3 +11,6 @@ Prediction of protein-ligand binding site is fundamental step in understanding f
 8. Numpy (https://numpy.org/)
 9. Python 3.6 (https://www.python.org/) <br/>
 Note that: It is better to setup new environment using conda or pyenv. You may need to compile open babel and tfbio if dosent installs with PIP.
+<img src="CBIBUSB_Model.pdf"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
