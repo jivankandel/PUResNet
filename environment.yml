@@ -1,0 +1,13 @@
+channels:
+- cheminfIBB
+- anaconda
+- openbabel
+dependencies:
+- python>=3.6
+- openbabel>=2.4
+- tfbio=0.3
+- scikit-image>=0.13
+- numpy>=1.12
+- scipy>=1
+- keras>=2.1,<2.3
+- tensorflow>=1.8,<=1.11
