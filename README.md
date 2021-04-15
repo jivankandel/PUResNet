@@ -13,4 +13,7 @@ Prediction of protein-ligand binding site is fundamental step in understanding f
 Note that: It is better to setup new environment using conda or pyenv. You may need to compile open babel and tfbio if dosent installs with PIP.
 # Model Architecture
 <img src="M1.jpg" style="float: left; margin-right: 10px;"/>
-<h5> Figure showing Convolutional Block,Identiy Block and Up Sampling Block </h5>
+<h5 align="center"> Figure showing Convolutional Block,Identiy Block and Up Sampling Block </h5>
+<img src="M2.jpg" style="float: left; margin-right: 10px;"/>
+<br>
+<h5 align="center"> Figure showing Architecture of PUResNet </h5>
