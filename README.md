@@ -19,10 +19,10 @@ Note that: It is better to setup new environment using conda or pyenv. You may n
 <h5 align="center"> Figure showing Architecture of PUResNet </h5>
 <h1>Setting Environment</h1>
 1. Clone this repository 
-```ruby
+```
 git clone 
 ```
-```ruby
+```
 #create conda environment
 conda env create -f environment.yml -n env_name
 conda activate env_name
