@@ -1,2 +1,2 @@
-# PUResNet
-Predicting protein-ligand binding sites using deep convolutional neural network
+# PUResNet(Predicting protein-ligand binding sites using deep convolutional neural network)
+Prediction of protein-ligand binding site is fundamental step in understanding functional characteristics of the protein which plays vital role in carrying out different biological functions and is a crucial stage in drug discovery. A protein shows its true nature after interacting with any capable molecule knows as ligand which binds only in favorable binding site of protein structure.
