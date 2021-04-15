@@ -9,7 +9,7 @@ Prediction of protein-ligand binding site is fundamental step in understanding f
 6. Pybel (http://openbabel.org/docs/current/UseTheLibrary/Python_Pybel.html)
 7. TFBIO (https://gitlab.com/cheminfIBB/tfbio)
 8. Numpy (https://numpy.org/)
-9. Python 3.6 (https://www.python.org/) <br/>
+9. Python 3.6 (https://www.python.org/)
 Note that: It is better to setup new environment using conda or pyenv. You may need to compile open babel and tfbio if installing with PIP doesn't work.
 # Model Architecture
 <img src="M1.jpg" style="float: left; margin-right: 10px;"/>
@@ -19,9 +19,9 @@ Note that: It is better to setup new environment using conda or pyenv. You may n
 <h5 align="center"> Figure showing Architecture of PUResNet </h5>
 <h1>Setting Environment</h1>
 1. Clone this repository 
-```
+<pre>
 git clone 
-```
+</pre>
 ```
 #create conda environment
 conda env create -f environment.yml -n env_name
