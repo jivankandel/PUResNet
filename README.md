@@ -12,6 +12,5 @@ Prediction of protein-ligand binding site is fundamental step in understanding f
 9. Python 3.6 (https://www.python.org/) <br/>
 Note that: It is better to setup new environment using conda or pyenv. You may need to compile open babel and tfbio if dosent installs with PIP.
 # Model Architecture
-<img src="M1.jpg"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+<img src="M1.jpg" style="float: left; margin-right: 10px;" />
+## Figure showing Convolutional Block,Identiy Block and Up Sampling Block
