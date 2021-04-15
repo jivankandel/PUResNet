@@ -17,3 +17,4 @@ Note that: It is better to setup new environment using conda or pyenv. You may n
 <br>
 <img src="M2.jpg" style="float: left; margin-right: 10px;"/>
 <h5 align="center"> Figure showing Architecture of PUResNet </h5>
+<h1>Setting up Environment</h1>
