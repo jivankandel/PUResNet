@@ -9,5 +9,5 @@ Prediction of protein-ligand binding site is fundamental step in understanding f
 6. Pybel (http://openbabel.org/docs/current/UseTheLibrary/Python_Pybel.html)
 7. TFBIO (https://gitlab.com/cheminfIBB/tfbio)
 8. Numpy (https://numpy.org/)
-9. Python 3.6 (https://www.python.org/)
-\n Note that: It is better to setup new environment using conda or pyenv
+9. Python 3.6 (https://www.python.org/) <br>
+Note that: It is better to setup new environment using conda or pyenv
