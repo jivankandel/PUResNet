@@ -14,6 +14,6 @@ Note that: It is better to setup new environment using conda or pyenv. You may n
 # Model Architecture
 <img src="M1.jpg" style="float: left; margin-right: 10px;"/>
 <h5 align="center"> Figure showing Convolutional Block,Identiy Block and Up Sampling Block </h5>
-<img src="M2.jpg" style="float: left; margin-right: 10px;"/>
 <br>
+<img src="M2.jpg" style="float: left; margin-right: 10px;"/>
 <h5 align="center"> Figure showing Architecture of PUResNet </h5>
