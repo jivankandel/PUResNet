@@ -38,7 +38,7 @@ conda install -c conda-forge tensorflow=1.11
 </pre>
 2. Prediction
 <p>
-usage: predict.py [-h] --file_format FILE_FORMAT --mode MODE --input_path
+usage: <br> predict.py [-h] --file_format FILE_FORMAT --mode MODE --input_path
                   INPUT_PATH --model_path MODEL_PATH
                   [--output_format OUTPUT_FORMAT] [--output_path OUTPUT_PATH]
                   [--gpu GPU]
