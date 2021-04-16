@@ -39,4 +39,32 @@ conda install -c conda-forge tensorflow=1.11
 2. Prediction
 <pre>
 python predict.py -h
+usage: predict.py [-h] --file_format FILE_FORMAT --mode MODE --input_path
+                  INPUT_PATH --model_path MODEL_PATH
+                  [--output_format OUTPUT_FORMAT] [--output_path OUTPUT_PATH]
+                  [--gpu GPU]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --file_format FILE_FORMAT, -ftype FILE_FORMAT
+                        File Format of Protein Structure like: mol2,pdb..etc.
+                        All file format supported by Open Babel is supported
+                        (default: None)
+  --mode MODE, -m MODE  Mode 0 is for single protein structure. Mode 1 is for
+                        multiple protein structure (default: None)
+  --input_path INPUT_PATH, -i INPUT_PATH
+                        For mode 0 provide absolute or relative path for
+                        protein structure. For mode 1 provide absolute or
+                        relative path for folder containing protein structure
+                        (default: None)
+  --model_path MODEL_PATH, -mpath MODEL_PATH
+                        Provide models absolute or relative path of model
+                        (default: None)
+  --output_format OUTPUT_FORMAT, -otype OUTPUT_FORMAT
+                        Provide the output format for predicted binding side.
+                        All formats supported by Open Babel (default: mol2)
+  --output_path OUTPUT_PATH, -o OUTPUT_PATH
+                        path to model output (default: output)
+  --gpu GPU, -gpu GPU   Provide GPU device if you want to use GPU like: 0 or 1
+                        or 2 etc. (default: None)
 </pre>
