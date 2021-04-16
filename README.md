@@ -26,6 +26,6 @@ cd PUResNet
 2. Setup Environment
 <pre>
 #create conda environment
-conda env create -f environment.yml -n env_name
+conda create -n env_name python=3.6 
 conda activate env_name
 </pre>
