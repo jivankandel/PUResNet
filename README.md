@@ -36,3 +36,4 @@ conda install -c anaconda scipy
 conda install -c conda-forge keras=2.1
 conda install -c conda-forge tensorflow=1.11
 </pre>
+2. Prediction
