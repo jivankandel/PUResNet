@@ -181,5 +181,5 @@ class PUResNet(Model):
                 a=mol.NewAtom()
                 a.SetVector(float(idx[0]),float(idx[1]),float(idx[2]))
             p_mol=pybel.Molecule(mol)
-            p_mol.write(format,path+'/pocket'+str(i)+'.format')
+            p_mol.write(format,path+'/pocket'+str(i)+'.'+format)
             i+=1
