@@ -70,5 +70,5 @@ optional arguments:
 </pre>
 Example:
 <pre>
-python predict.py -ftype mol2 -m 0 -i test.pdb -mpath whole_trained_model1.hdf -otype mol2 -o output -gpu 1
+python predict.py -ftype pdb -m 0 -i test.pdb -mpath whole_trained_model1.hdf -otype mol2 -o output -gpu 1
 </pre>
