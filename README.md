@@ -68,3 +68,7 @@ optional arguments:
   --gpu GPU, -gpu GPU   Provide GPU device if you want to use GPU like: 0 or 1
                         or 2 etc. (default: None)
 </pre>
+Example:
+<pre>
+python predict.py -ftype mol2 -m 0 -i test.pdb -mpath whole_trained_model1.hdf -otype mol2 -o output -gpu 1
+</pre>
