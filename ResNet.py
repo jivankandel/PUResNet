@@ -169,7 +169,6 @@ class PUResNet(Model):
         return density, origin, step
     def save_pocket_mol2(self,mol,path,format,**pocket_kwargs):
         density, origin, step = self.pocket_density_from_mol(mol)
-        print(np.unique(density))
         pockets = self.get_pockets_segmentation(density, **pocket_kwargs)
         i=0
         for pocket_label in range(1, pockets.max() + 1):
