@@ -45,7 +45,7 @@ def main():
         o_path=os.path.join(args.output_path,os.path.basename(args.input_path))
         if not os.path.exists(o_path):
             os.mkdir(o_path)
-        model.save_pocket_mol2(mol,o_path,os.output_format)
+        model.save_pocket_mol2(mol,o_path,args.output_format)
     elif args.mode==1:
         for name in os.listdir(args.input_path):
             mol_path=os.path.join(args.input_path,name)
@@ -53,6 +53,6 @@ def main():
             o_path=os.path.join(args.output_path,os.path.basename(args.mol_path))
             if not os.path.exists(o_path):
                 os.mkdir(o_path)
-            model.save_pocket_mol2(mol,o_path,os.output_format)
+            model.save_pocket_mol2(mol,o_path,args.output_format)
 if __name__=='__main__':
     main()
