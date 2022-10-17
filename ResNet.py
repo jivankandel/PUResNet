@@ -5,11 +5,11 @@ from keras import backend as K
 from keras.regularizers import l2
 from skimage.segmentation import clear_border
 from skimage.morphology import closing
-from tfbio.data import Featurizer
+# from tfbio.data import Featurizer
 from skimage.measure import label
-import pybel
+from openbabel import pybel
 import openbabel
-import tfbio.data
+from data import *
 # import tfbio.net
 import numpy as np
 class PUResNet(Model):
@@ -160,7 +160,7 @@ class PUResNet(Model):
         centroid = prot_coords.mean(axis=0)
         prot_coords -= centroid
         resolution = 1. / self.scale
-        x = tfbio.data.make_grid(prot_coords, prot_features,
+        x = make_grid(prot_coords, prot_features,
                                  max_dist=self.max_dist,
                                  grid_resolution=resolution)
         density = self.predict(x)
