@@ -1,5 +1,4 @@
 channels:
-- cheminfIBB
 - anaconda
 - conda-forge
 dependencies:
