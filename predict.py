@@ -1,5 +1,5 @@
 import os 
-import pybel
+from openbabel import pybel
 import tensorflow as tf 
 import ResNet
 import argparse
@@ -39,7 +39,7 @@ def main():
         os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
         os.environ["CUDA_VISIBLE_DEVICES"]=args.gpu
     model=ResNet.PUResNet()
-    model.load_weights(args.model_path)
+    model.load_weights('whole_trained_model1.hdf')
     if args.mode==0:
         mol=next(pybel.readfile(args.file_format,args.input_path))
         o_path=os.path.join(args.output_path,os.path.basename(args.input_path))
