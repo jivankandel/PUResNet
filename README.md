@@ -33,8 +33,7 @@ cd PUResNet
 #create conda environment
 conda create -n env_name python=3.6 
 conda activate env_name
-conda install -c openbabel openbabel
-conda install -c cheminfibb tfbio
+conda install -c conda-forge openbabel
 conda install scikit-image
 conda install numpy
 conda install -c anaconda scipy
