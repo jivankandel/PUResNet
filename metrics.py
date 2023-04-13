@@ -17,7 +17,7 @@ def create_3d_grid(pocket, resolution):
         cell_idx = np.floor(cell / resolution).astype(int)
         grid[tuple(cell_idx)] = True
     new_min_coords = np.zeros(3)
-    return grid, min_coords
+    return grid, new_min_coords
 
 def intersection_over_union(pocket1, pocket2, resolution):
     grid1, min_coords1 = create_3d_grid(pocket1, resolution)
