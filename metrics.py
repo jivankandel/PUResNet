@@ -16,27 +16,24 @@ def create_3d_grid(pocket, resolution):
     for cell in shifted_coords:
         cell_idx = np.floor(cell / resolution).astype(int)
         grid[tuple(cell_idx)] = True
-    new_min_coords = np.zeros(3)
-    return grid, new_min_coords
+    return grid
 
 def intersection_over_union(pocket1, pocket2, resolution):
-    grid1, min_coords1 = create_3d_grid(pocket1, resolution)
-    grid2, min_coords2 = create_3d_grid(pocket2, resolution)
+    grid1= create_3d_grid(pocket1, resolution)
+    grid2 = create_3d_grid(pocket2, resolution)
     
-    common_min_coords = np.minimum(min_coords1, min_coords2)
-    common_grid_shape = np.maximum(grid1.shape + (min_coords1 - common_min_coords) // resolution, 
-                                   grid2.shape + (min_coords2 - common_min_coords) // resolution)
+    common_grid_shape = np.maximum(grid1.shape, grid2.shape)
     
     grid1_padded = np.pad(
         grid1,
-        [(int((min_coords1[i] - common_min_coords[i]) // resolution), int(common_grid_shape[i] - grid1.shape[i] - (min_coords1[i] - common_min_coords[i]) // resolution)) for i in range(3)],
+        [(0, int(common_grid_shape[i] - grid1.shape[i])) for i in range(3)],
         mode='constant',
         constant_values=False
     )
     
     grid2_padded = np.pad(
         grid2,
-        [(int((min_coords2[i] - common_min_coords[i]) // resolution), int(common_grid_shape[i] - grid2.shape[i] - (min_coords2[i] - common_min_coords[i]) // resolution)) for i in range(3)],
+        [(0, int(common_grid_shape[i] - grid2.shape[i])) for i in range(3)],
         mode='constant',
         constant_values=False
     )
@@ -49,23 +46,21 @@ def intersection_over_union(pocket1, pocket2, resolution):
     
     return intersection_volume / union_volume
 def intersection_over_lig(lig, pocket, resolution):
-    grid1, min_coords1 = create_3d_grid(lig, resolution)
-    grid2, min_coords2 = create_3d_grid(pocket, resolution)
+    grid1= create_3d_grid(lig, resolution)
+    grid2 = create_3d_grid(pocket, resolution)
     
-    common_min_coords = np.minimum(min_coords1, min_coords2)
-    common_grid_shape = np.maximum(grid1.shape + (min_coords1 - common_min_coords) // resolution, 
-                                   grid2.shape + (min_coords2 - common_min_coords) // resolution)
+    common_grid_shape = np.maximum(grid1.shape, grid2.shape)
     
     grid1_padded = np.pad(
         grid1,
-        [(int((min_coords1[i] - common_min_coords[i]) // resolution), int(common_grid_shape[i] - grid1.shape[i] - (min_coords1[i] - common_min_coords[i]) // resolution)) for i in range(3)],
+        [(0, int(common_grid_shape[i] - grid1.shape[i])) for i in range(3)],
         mode='constant',
         constant_values=False
     )
     
     grid2_padded = np.pad(
         grid2,
-        [(int((min_coords2[i] - common_min_coords[i]) // resolution), int(common_grid_shape[i] - grid2.shape[i] - (min_coords2[i] - common_min_coords[i]) // resolution)) for i in range(3)],
+        [(0, int(common_grid_shape[i] - grid2.shape[i])) for i in range(3)],
         mode='constant',
         constant_values=False
     )
