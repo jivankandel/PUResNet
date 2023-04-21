@@ -41,6 +41,11 @@ conda install -c conda-forge keras=2.1
 conda install -c conda-forge tensorflow=1.11
 </pre>
 
+Or use environment.yml by:
+```
+conda env create -f environment.yml
+```
+
 3. Download model file
 Go to [this link](https://github.com/jivankandel/PUResNet/blob/main/whole_trained_model1.hdf) and click download, and move it into your working directory. Since this was uploaded with git lfs, git clone won't download the full file.
 
