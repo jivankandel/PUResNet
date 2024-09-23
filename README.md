@@ -1,7 +1,8 @@
 # PUResNetV2.0 !!! New Release !!! (PUResNetV2.0: a deep learning model leveraging sparse representation for improved ligand binding site prediction)
-Manuscript Link (https://jcheminf.biomedcentral.com/articles/10.1186/s13321-024-00865-6)
-Github Link (https://github.com/jivankandel/PUResNetV2.0)
-Webserver Link (https://nsclbio.jbnu.ac.kr/tools/jmol)
+Manuscript Link (https://jcheminf.biomedcentral.com/articles/10.1186/s13321-024-00865-6) <br>
+Github Link (https://github.com/jivankandel/PUResNetV2.0) <br>
+Webserver Link (https://nsclbio.jbnu.ac.kr/tools/jmol) <br>
+<br>
 
 
 # PUResNet(Predicting protein-ligand binding sites using deep convolutional neural network)
